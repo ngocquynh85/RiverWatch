@@ -1,0 +1,97 @@
+    <ons-page>
+    
+    <ons-toolbar>
+      
+    <div class="left">
+        <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+    </div>
+    <div class="center">River Watch</div>     
+    </ons-toolbar> 
+ 
+      <ons-list style="margin: 10px">
+        <ons-list-item style="padding:10px"> 
+            <ons-row>
+             <ons-col>Take a picture</ons-col> 
+             <ons-col><div align=right><button class="button" onclick=capture_camera();><ons-icon icon="ion-ios-camera"></ons-icon></button></div></ons-col>
+             </ons-row>
+        </ons-list-item>
+        
+        <ons-list-item class="to-wrapper">
+            <div id="camera_img"><img src="images/river3.jpg" width="100%" class="to-image"></div>
+        </ons-list-item>
+        
+        <ons-list-item  class="to-wrapper">
+          <div id="mapholder"></div>
+          <div id="map_gps"></div>
+          <div id="map_error"></div>
+        </ons-list-item>
+        
+        <ons-list-item>
+            Tag &nbsp; &nbsp; &nbsp;
+            <select id="select_emo" class="button button--outline">
+                <option value="Nice">Nice</option>
+                <option value="Danger">Danger</option>
+                <option value="Sad">Sad</option>
+                <option value="Find_it">Find it</option>
+                <option value="Beautiful" selected="select">Beautiful</option>
+                <option value="Dirty">Dirty</option>
+                <option value="Troubled">Troubled</option>
+                <option value="Other">Other</option>
+            </select>
+            
+        </ons-list-item>
+        
+        <ons-list-item>
+          <textarea class="textarea textarea--transparent" placeholder="Message" style="width: 100%; height: 100px;"></textarea>
+        </ons-list-item>
+
+
+      </ons-list>
+
+      <div style="padding: 10px 9px">
+        <ons-button modifier="large" style="margin: 0 auto;">
+          Report
+        </ons-button>
+      </div>
+
+
+    </ons-page>
+
+<style>
+
+.to-wrapper {
+  padding: 10px;
+}
+
+.to-image {
+  
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+ 
+.map {
+  height: 150px;
+  padding:10px;
+}
+
+.to-name {
+  font-weight: 500;
+  font-size: 17px;
+  margin-bottom: 4px;
+}
+
+.to-email {
+  font-size: 14px;
+  opacity: 0.4;
+}
+
+.text-input {
+  margin-top: 4px;
+}
+
+.textarea {
+  margin-top: 4px;
+}
+
+
+</style>

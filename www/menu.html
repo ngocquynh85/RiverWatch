@@ -1,0 +1,44 @@
+<ons-page modifier="menu-page">
+        
+        <ons-list class="menu-list">
+          
+          <ons-toolbar modifier="transparent">
+          <div class="center">
+            <ons-toolbar-button class="menu-closeMenu" ng-click="menu.closeMenu()">
+              </ons-icon>Menu
+            </ons-toolbar-button>
+          </div>
+        </ons-toolbar>
+        
+          <ons-list-item class="menu-item" ng-click="app.slidingMenu.setMainPage('page_home.html', {closeMenu: true})">
+            <ons-icon icon="ion-android-home"></ons-icon>
+            Home
+          </ons-list-item>
+
+          <ons-list-item class="menu-item" ng-click="app.slidingMenu.setMainPage('page_profile.html', {closeMenu: true})">
+            <ons-icon icon="ion-person"></ons-icon>
+            Profile
+          </ons-list-item>
+
+          <ons-list-item class="menu-item" onclick="app.slidingMenu.setMainPage('page_report.html', {closeMenu: true}); getLocation();">
+            <ons-icon icon="ion-ios-eye"></ons-icon>
+            New Report
+          </ons-list-item>
+
+        </ons-list>
+
+        <br>
+
+        <ons-list class="bottom-menu-list">
+          <ons-list-item class="bottom-menu-item" ng-click="app.slidingMenu.setMainPage('page_about.html', {closeMenu: true})">
+            About
+          </ons-list-item>
+
+          <ons-list-item class="bottom-menu-item" ng-click="app.slidingMenu.setMainPage('page_help.html', {closeMenu: true})">
+            Help
+          </ons-list-item>
+
+
+
+
+      </ons-page>

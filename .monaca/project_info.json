@@ -1,0 +1,31 @@
+{
+    "plugins": [
+        "mobi.monaca.plugins.Monaca"
+    ],
+    "framework_version": "3.5",
+    "xcode_version": "6",
+    "cordova_version": "5.2",
+    "plugin_settings": {
+        "cordova-plugin-geolocation": {
+            "variables": []
+        },
+        "cordova-plugin-camera": {
+            "variables": []
+        }
+    },
+    "external_plugins": [
+        "cordova-plugin-whitelist@1.0.0",
+        "cordova-plugin-splashscreen@2.1.0",
+        "cordova-plugin-camera@1.2.0",
+        "cordova-plugin-geolocation@1.0.1"
+    ],
+    "title-ja": "",
+    "title-en": "RiverWatch",
+    "description-ja": "",
+    "description-en": "",
+    "category": "User Template",
+    "platform": [
+        "android"
+    ],
+    "name": "generated-1457638310-56ddbd91fd17346670b098ea"
+}

@@ -1,0 +1,48 @@
+<ons-page>
+
+<ons-toolbar>
+    <div class="left">
+        <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+    </div>
+    <div class="center">River Watch</div>
+</ons-toolbar>
+
+  <div class="login-form">
+
+    <input type="email" class="text-input--underbar" placeholder="Email" value="">
+    <input type="password" class="text-input--underbar" placeholder="Password" value="">
+    <br><br>
+    <ons-button modifier="large" class="login-button" onclick="app.slidingMenu.setMainPage('page_report.html', {closeMenu: true}); getLocation();";>Log In</ons-button>
+    <br><br>
+    
+  </div>
+
+</ons-page>
+
+<style>
+.login-form {
+  text-align: center;
+  width: 80%;
+  margin: 60px auto 0;
+}
+
+input[type=email], input[type=password] {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  outline: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.login-button {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.forgot-password {
+  display: block;
+  margin: 8px auto 0 auto;
+  font-size: 14px;
+}
+</style>

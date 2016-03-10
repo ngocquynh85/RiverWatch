@@ -1,0 +1,109 @@
+<ons-navigator>
+<ons-page>
+
+<ons-toolbar>
+    <div class="left">
+        <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+    </div>
+    <div class="center">River Watch</div>
+</ons-toolbar>
+
+
+<div class="profile-card">
+
+<img src="images/father_son.jpg" class="profile-image">
+<div class="profile-name">Starky Nguyen</div>
+<div class="profile-id">ngocquynh85@gmail.com</div>
+<div class="profile-desc">Concept designer, River Ranger</div>
+
+</div>
+
+<ons-list>
+<ons-list-item>
+  <ons-row>
+    <ons-col class="info-col">
+      <div class="info-num">87</div>
+      <div class="info-unit">Reports</div>
+    </ons-col>
+    
+    <ons-col class="info-col">
+      <div class="info-num">87</div>
+      <div class="info-unit">Reports</div>
+    </ons-col>
+    <ons-col class="info-col">
+      <div class="info-num">87</div>
+      <div class="info-unit">Reports</div>
+    </ons-col>
+  </ons-row>
+</ons-list-item>
+</ons-list>
+
+<br>
+<ons-button modifier="large" class="logout-button" onclick="app.slidingMenu.setMainPage('page_profile_login.html', {closeMenu: true})" >Logout </ons-button>
+
+<br>
+
+
+</ons-page>
+</ons-navigator>
+
+<style>
+.profile-card {
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 30px 0;
+  line-height: 1.4;
+  background-color: #33393c;
+  text-shadow: rgba(0, 0, 0, 0.4) 0px 1px 0px;
+}
+
+.profile-image {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  background-color: black;
+  border 1px solid white;
+  box-shadow:rgba(0, 0, 0, 0.2) 0px 2px 0px 0px;
+  -webkit-box-shadow:rgba(0, 0, 0, 0.2) 0px 2px 0px 0px;
+}
+
+.profile-name {
+  margin: 20px 0 0 0;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.profile-id {
+  margin: 0 0 5px 0;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.profile-desc {
+  font-size: 15px;
+  opacity: 0.6;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.info-col {
+  height: 60px;
+  line-height: 1;
+  padding: 12px 0 12px 4px;
+}
+
+.info-num {
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.info-unit {
+  margin-top: 6px;
+  font-size: 14px;
+  opacity: 0.4;
+}
+</style>
